@@ -1,7 +1,6 @@
 package com.example.demo.model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Company {
 
@@ -51,8 +50,8 @@ public class Company {
         this.owners = owners;
     }
 
-    private static ArrayList<Owner> initializeOwners(List<Owner> owners) {
-        ArrayList<Owner> ownersTemp = new ArrayList();
+    private static ArrayList<Owner> initializeOwners(ArrayList<Owner> owners) {
+        ArrayList<Owner> ownersTemp = new ArrayList<>();
         for (Owner owner : owners) {
             Owner newOwner = new Owner(owner.getName(), owner.getAddress(), owner.getCpr());
             ownersTemp.add(newOwner);

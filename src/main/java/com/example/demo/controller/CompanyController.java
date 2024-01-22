@@ -11,7 +11,7 @@ import java.util.List;
 public class CompanyController {
 
     @Autowired
-    private CompanyService service;
+    CompanyService service;
 
     @PostMapping
     public Company addCompany(@RequestBody Company company) {

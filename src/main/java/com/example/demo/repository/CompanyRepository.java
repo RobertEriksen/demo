@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public class CompanyRepository {
 
-    private List<Company> list = new ArrayList<>();
+    private ArrayList<Company> list = new ArrayList<>();
     public Company save(Company c) {
         Company company = new Company(
                 c.getAddress(),

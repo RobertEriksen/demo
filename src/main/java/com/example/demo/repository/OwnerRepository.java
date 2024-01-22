@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public class OwnerRepository {
 
-    private List<Owner> list = new ArrayList<>();
+    private ArrayList<Owner> list = new ArrayList<>();
     public Owner save(Owner o) {
         Owner owner = new Owner(
                 o.getName(),

@@ -11,7 +11,7 @@ import java.util.List;
 public class OwnerController {
 
     @Autowired
-    private OwnerService service;
+    OwnerService service;
 
     @PostMapping
     public Owner addOwner(@RequestBody Owner owner) {
